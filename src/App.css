@@ -1,21 +1,14 @@
-.App {
-  text-align: center;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.homepage {
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .article {
   padding-top: 100px;
+  padding-bottom: 20px;
 }
+
 .article__title {
   max-width: 800px;
   margin: auto;
@@ -31,9 +24,43 @@
   top: 0;
   width: 100%;
   background-color: bisque;
-  margin-bottom: 200px;
 }
 
 .footer {
   background-color: bisque;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+@media only screen and (max-width: 400px) {
+  .homepage {
+    background-color: #F09A9D;
+    margin-top: 100px;
+  }
+}
+
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  .homepage {
+    background-color: #F5CF8E;
+  }
+  .header {
+    min-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 961px) {
+  .homepage {
+    width: 100%;
+    background-color: whitesmoke;
+  }
+  .header {
+    min-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
 }
