@@ -16,9 +16,11 @@ class TopMenu extends React.Component {
 
   render() {
     return (
-      <Menu onClick={this.handleClick} selectedKeys={[this.state.current]} mode="horizontal">
+      <Menu onClick={this.handleClick} selectedKeys={[this.state.current]} mode="horizontal" className="topMenu">
         <Menu.Item key="about">
-          About
+          <a href="#about">
+            About
+          </a>
         </Menu.Item>
         <Menu.Item key="articles">
           Articles
