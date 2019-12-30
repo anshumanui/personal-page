@@ -3,44 +3,34 @@ import './App.css';
 import Article from './Article';
 import Header from './Header';
 import Footer from './Footer';
+import { Articles, ArticleType } from './types';
+import articlesJson from './articles/articles.json';
+
+const articles: Articles = articlesJson
 
 function App() {
   return (
     <React.Fragment>
-      <Header 
+      <Header
         title="Natalia's space to share and experiment"
         link="Once to be a link to all articles"
       />
       <div className="homepage">
-        <Article 
-          title="My favourite podcasts"
-          content="Front End Happy Hour is a podcast for people interested in various areas connected to front end. On every episodes there are a few panelists - some of them are regularly on the show and there are guests too. Most of the panelists work in Netflix and the guests come from different companies including Atlassian or Dropbox.
 
-          The episodes are about 40-50 minutes long but as they are fun and informal the time flies fast while listening to them. 
-          
-          I listened to a few episodes, each of them was on a different topic. I liked for example the ones about processes and libraries. It is interesting to listen how the leading technology companies approach different subjects and how developers there work and think about their job. I like how the panelists share their knowledge and experience but are also not afraid to explain what they did wrong and how it was fixed. 
-          
-          At the end of every episodes the panelists share their tips. Sometimes they are connected to the topic of the conversation but usually they are very diverse. They include tips to watch some Netflix series, listen to a song or watch a particular lecture online.
-          
-          The whole idea of this podcast is very informal - the panelists agree every time on a particular word that is not allowed but is connected to the subject. For example on the episode about performance the word measurement was forbidden. Every time sometimes says it, everyone needs to have a drink (therefore Happy Hour in the title) and it brings some funny situations (I like especially coming up with other words instead of the forbidden ones).
-          
-          The whole podcast feels to me like sitting in a bar close to smart and funny people discussing their job and sharing experience in a fun and informal way.
-          
-          I enjoy listening to it and can definitely recommend it to anyone interested in front end. Out of the podcasts I listened to this became my favourite one.
-          
-          My recommended episode: Pacing our drinks - Engineering Performance. " 
-          />
-        <Article 
-          title="Article on Kids Academy to come"
-          content="Kids Academy Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nunc auctor. Aliquam erat volutpat. Nullam faucibus mi quis velit. Vestibulum fermentum tortor id mi. Duis pulvinar. In laoreet, magna id viverra tincidunt, sem odio bibendum justo, vel imperdiet sapien wisi sed libero. Aliquam ante. Vivamus porttitor turpis ac leo. Maecenas aliquet accumsan leo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-          " 
-          />
-        <Article 
-          title="Article on Code Retreat to come"
-          content="Kids Academy Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nunc auctor. Aliquam erat volutpat. Nullam faucibus mi quis velit. Vestibulum fermentum tortor id mi. Duis pulvinar. In laoreet, magna id viverra tincidunt, sem odio bibendum justo, vel imperdiet sapien wisi sed libero. Aliquam ante. Vivamus porttitor turpis ac leo. Maecenas aliquet accumsan leo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-          " 
-          />
-        <Footer 
+        <div>
+          {
+            articles.map(article => (
+              <div key={article.id}>
+                <Article
+                  title={article.title}
+                  content={article.content}
+                />
+              </div>
+            ))
+          }
+        </div>
+
+        <Footer
           text="I am a footer"
           link="Once to become a link to the top of the page"
         />
