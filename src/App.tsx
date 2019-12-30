@@ -4,6 +4,7 @@ import 'antd/dist/antd.css'
 import './App.css';
 import Header from './Header';
 import Footer from './Footer';
+import TopMenu from './Menu';
 import { Articles } from './types';
 import articlesJson from './articles/articles.json';
 
@@ -16,6 +17,7 @@ function App() {
         title="Natalia's space to share and experiment"
         link="Once to be a link to all articles"
       />
+      <TopMenu />
       <div className="homepage">
         <Row gutter={16}>
           <div>
