@@ -3,9 +3,11 @@ import { Card, Col, Row } from 'antd';
 import 'antd/dist/antd.css'
 import './App.css';
 import Header from './Header';
+import AboutMe from './AboutMe';
 import Footer from './Footer';
 import TopMenu from './Menu';
 import { Articles } from './types';
+import Natalia from './images/natalia.jpg'
 import articlesJson from './articles/articles.json';
 
 const articles: Articles = articlesJson
@@ -18,6 +20,7 @@ function App() {
         link="Once to be a link to all articles"
       />
       <TopMenu />
+      <AboutMe />
       <div className="homepage">
         <Row gutter={16}>
           <div>
