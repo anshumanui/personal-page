@@ -7,19 +7,19 @@ import AboutMe from './AboutMe';
 import Footer from './Footer';
 import TopMenu from './Menu';
 import { Articles } from './types';
-import Natalia from './images/natalia.jpg'
 import articlesJson from './articles/articles.json';
+import Events from './Events';
 
 const articles: Articles = articlesJson
 
 function App() {
   return (
     <React.Fragment>
+      <TopMenu />
       <Header
         title="Natalia's space to share and experiment"
         link="Once to be a link to all articles"
       />
-      <TopMenu />
       <AboutMe />
       <div className="homepage">
         <Row gutter={16}>
@@ -37,6 +37,7 @@ function App() {
             }
           </div>
         </Row>
+      <Events />
         <Footer
           text="I am a footer"
           link="Once to become a link to the top of the page"

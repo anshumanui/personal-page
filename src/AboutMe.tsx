@@ -4,7 +4,8 @@ const { Meta } = Card;
 
 class AboutMe extends React.Component {
   render() {
-    return <Card
+    return <Card 
+      id="about"
       style={{ width: 900 }}
     >
       <Meta
