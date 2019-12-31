@@ -1,5 +1,5 @@
 import React from 'react';
-import {Menu} from 'antd';
+import { Menu } from 'antd';
 import 'antd/dist/antd.css'
 
 class TopMenu extends React.Component {
@@ -23,10 +23,14 @@ class TopMenu extends React.Component {
           </a>
         </Menu.Item>
         <Menu.Item key="articles">
-          Articles
+          <a href="#posts">
+            Articles
+            </a>
         </Menu.Item>
         <Menu.Item key="events">
-          Events
+          <a href="#events">
+            Events
+          </a>
         </Menu.Item>
       </Menu>
     );

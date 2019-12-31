@@ -2,7 +2,7 @@ import React from 'react';
 
 export type Props = {
   title: string;
-  link: string;
+  link?: string;
 }
 
 const Header: React.SFC<Props> = ({
