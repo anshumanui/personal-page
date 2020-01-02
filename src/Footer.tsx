@@ -5,7 +5,7 @@ export type Props = {
   link: string;
 }
 
-const Footer: React.SFC<Props> = ({
+const MyFooter: React.SFC<Props> = ({
   link, text
 }) => (
   <footer className="footer">
@@ -14,6 +14,6 @@ const Footer: React.SFC<Props> = ({
   </footer>
 )
 
-export default Footer;
+export default MyFooter;
 
 

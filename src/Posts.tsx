@@ -11,12 +11,13 @@ class Posts extends React.Component {
   render() {
     return (
       <div id="posts" className="posts">
-        <Row gutter={16}>
+        <h3 className="posts-header">I write about the topics I find interesting and want to share my thoughts on them with others.</h3>
+        <Row gutter={[8, 8]}>
           <div>
             {
               articles.map(article => (
                 <div key={article.id}>
-                  <Col span={8}>
+                  <Col xs={{ span: 22, offset: 1 }} sm={{span: 12, offset: 1 }} md={{span: 10, offset: 1}} lg={{ span: 10, offset: 1}}>
                     <Card title={article.title} bordered={false} className="posts-post">
                       <p>{article.content}</p>
                     </Card>
