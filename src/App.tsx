@@ -2,7 +2,6 @@ import React from 'react';
 import 'antd/dist/antd.css'
 import './App.css';
 import Header from './Header';
-import AboutMe from './AboutMe';
 import Footer from './Footer';
 import TopMenu from './Menu';
 import Events from './Events';
@@ -15,9 +14,8 @@ function App() {
       <Header
         title="Natalia's space to share and experiment"
       />
-      <AboutMe />
       <div className="homepage">
-       <Posts />
+      <Posts />
       <Events />
         <Footer
           text="I am a footer"
