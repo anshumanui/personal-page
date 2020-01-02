@@ -22,11 +22,11 @@
 
 .header {
   width: 100%;
-  background-color: bisque;
+  background-color: #FF6F61;
 }
 
 .footer {
-  background-color: bisque;
+  background-color: #FFDA29;
   position: fixed;
   left: 0;
   bottom: 0;

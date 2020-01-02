@@ -1,4 +1,5 @@
 import React from 'react';
+import AboutMe from './AboutMe';
 
 export type Props = {
   title: string;
@@ -11,6 +12,7 @@ const Header: React.SFC<Props> = ({
   <div className="header">
     <h1>{title}</h1>
     <a href="#">{link}</a>
+    <AboutMe />
   </div>
 );
 
