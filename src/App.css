@@ -1,8 +1,5 @@
 .homepage {
   margin: 0 auto;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  padding: 30px;
 }
 
 .article {
@@ -23,11 +20,12 @@
 .header {
   width: 100%;
   background-color: #FF6F61;
+  padding-top: 3em;
+  padding-bottom: 3em;
 }
 
 .footer {
   background-color: #FFDA29;
-  position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
