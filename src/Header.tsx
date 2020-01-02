@@ -6,7 +6,7 @@ export type Props = {
   link?: string;
 }
 
-const Header: React.SFC<Props> = ({
+const MyHeader: React.SFC<Props> = ({
   link, title
 }) => (
   <div className="header">
@@ -16,4 +16,4 @@ const Header: React.SFC<Props> = ({
   </div>
 );
 
-export default Header;
+export default MyHeader;

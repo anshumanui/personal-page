@@ -18,7 +18,7 @@ function App() {
       <Posts />
       <Events />
         <Footer
-          text="I am a footer"
+          text="Made mostly with joy and enthusiasm"
           link="Once to become a link to the top of the page"
         />
       </div>

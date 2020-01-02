@@ -1,3 +1,13 @@
+.posts {
+  padding: 5em 1em;
+}
+
 .posts-post {
   background-color: #98DDDE;
+  min-width: 250px;
+}
+
+.posts-header {
+  text-align: center;
+  padding-bottom: 2em;
 }
