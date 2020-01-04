@@ -8,7 +8,7 @@ export type Props = {
 const MyHeader: React.SFC<Props> = ({
   title
 }) => (
-  <div className="header">
+  <div className="header" role="banner">
     <h1>{title}</h1>
     <AboutMe />
   </div>
