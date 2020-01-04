@@ -12,7 +12,7 @@ const MyFooter: React.SFC<Props> = ({
   <footer className="footer">
     <p>{text}</p>
     <a className="footer-link" href="#top-menu">{link}</a>
-    <a className="footer-link" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/nataliavokrouhlecka/"><i className="fab fa-linkedin-in footer-icon"></i></a>
+    <a className="footer-link" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/nataliavokrouhlecka/" aria-label="Go to Natalia's LinkedIn profile"><i className="fab fa-linkedin-in footer-icon"></i></a>
   </footer>
 )
 
