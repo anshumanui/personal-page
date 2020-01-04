@@ -14,14 +14,14 @@ function App() {
       <Header
         title="Natalia's space to share and experiment"
       />
-      <div className="homepage">
-      <Posts />
-      <Events />
-        <Footer
+      <div className="homepage" role="main">
+        <Posts />
+        <Events />
+      </div>
+      <Footer
           text="Made for fun to learn and share"
           link="Go to the top of the page"
         />
-      </div>
     </React.Fragment>
   );
 }

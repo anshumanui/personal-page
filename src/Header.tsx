@@ -2,16 +2,14 @@ import React from 'react';
 import AboutMe from './AboutMe';
 
 export type Props = {
-  title: string;
-  link?: string;
+  title: string
 }
 
 const MyHeader: React.SFC<Props> = ({
-  link, title
+  title
 }) => (
-  <div className="header">
+  <div className="header" role="banner">
     <h1>{title}</h1>
-    <a href="#">{link}</a>
     <AboutMe />
   </div>
 );

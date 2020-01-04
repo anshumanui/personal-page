@@ -9,10 +9,10 @@ export type Props = {
 const MyFooter: React.SFC<Props> = ({
   link, text
 }) => (
-  <footer className="footer">
+  <footer className="footer" role="contentinfo">
     <p>{text}</p>
-    <a href="#">{link}</a>
-    <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/nataliavokrouhlecka/"><i className="fab fa-linkedin-in footer-icon"></i></a>
+    <a className="footer-link" href="#top-menu">{link}</a>
+    <a className="footer-link" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/nataliavokrouhlecka/" aria-label="Go to Natalia's LinkedIn profile"><i className="fab fa-linkedin-in footer-icon"></i></a>
   </footer>
 )
 
