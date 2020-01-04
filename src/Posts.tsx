@@ -11,7 +11,7 @@ class Posts extends React.Component {
   render() {
     return (
       <div id="posts" className="posts">
-        <h3 className="posts-header">I write about the topics I find interesting and want to share my thoughts on them with others.</h3>
+        <h2 className="posts-header">I write about the topics I find interesting and want to share my thoughts on them with others.</h2>
         <Row gutter={[8, 8]}>
           <div>
             {

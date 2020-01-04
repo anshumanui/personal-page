@@ -10,7 +10,7 @@ const Article: React.SFC<Props> = ({
   content, 
   title}) => (
     <div className="article">
-      <h2 className="article__title">{title}</h2>
+      <h3 className="article__title">{title}</h3>
       <div className="article__content">
       <span>{content}</span>
       </div>
