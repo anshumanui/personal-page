@@ -18,8 +18,8 @@ function App() {
       <Posts />
       <Events />
         <Footer
-          text="Made mostly with joy and enthusiasm"
-          link="Once to become a link to the top of the page"
+          text="Made for fun to learn and share"
+          link="Go to the top of the page"
         />
       </div>
     </React.Fragment>
